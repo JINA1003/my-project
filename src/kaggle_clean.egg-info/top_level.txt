@@ -1,7 +1,4 @@
-__init__
-config
 data
 evaluation
 features
 modeling
-paths

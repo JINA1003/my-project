@@ -3,7 +3,15 @@ import json
 from pathlib import Path
 import pandas as pd
 import joblib
-from ..paths import RAW, PROCESSED, MODELS, REPORTS
+
+# Calculate paths directly
+ROOT = Path(__file__).resolve().parents[2]
+DATA = ROOT / "data"
+RAW = DATA / "raw"
+INTERIM = DATA / "interim"
+PROCESSED = DATA / "processed"
+MODELS = ROOT / "models" / "artifacts"
+REPORTS = ROOT / "models" / "reports"
 
 def load_raw(name: str) -> pd.DataFrame:
     path = RAW / name
