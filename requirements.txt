@@ -1,0 +1,9 @@
+pandas
+jupyter
+scikit-learn
+matplotlib
+seaborn
+torch
+easydict
+xgboost
+lightgbm
